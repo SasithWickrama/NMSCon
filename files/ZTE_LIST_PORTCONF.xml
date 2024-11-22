@@ -1,0 +1,26 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.zte.com.cn/accessnetwork/ems/webservice/">
+   <soapenv:Header>
+      <web:Authentication>
+         <userName>slt</userName>
+         <password>Slt@17XML</password>
+      </web:Authentication>
+   </soapenv:Header>
+   <soapenv:Body>
+      <web:OperationRequestInfo>
+         <operationName>LST-PORTCONF-DSL</operationName>
+           <operatedObject>
+            <!--Zero or more repetitions:-->
+           <param>
+               <name>DNAME</name>
+               <value>%ADSL_ZTE_DNAME%</value>
+            </param>
+		<param>
+               <name>PID</name>
+               <value>%FTTH_ZTE_PID%</value>
+            </param>		
+		         </operatedObject>
+            <operationParam>
+            </operationParam>
+      </web:OperationRequestInfo>
+   </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,41 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:os="os.xsd.v1">
+   <soapenv:Header><wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+    <wsse:UsernameToken wsu:Id="UsernameToken-2" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+      <wsse:Username>clarity</wsse:Username>
+      <wsse:Password >Test1234#</wsse:Password>
+    </wsse:UsernameToken>
+  </wsse:Security>
+   </soapenv:Header>
+<soapenv:Body>
+<os:QUERY-ONTRUNINFO>
+<!--Optional:-->
+<os:MODIFIER>ONTRUNINFO</os:MODIFIER>
+<!--Optional:-->
+<os:object>
+<!--Optional:-->
+<os:DID></os:DID>
+<!--Optional:-->
+<os:DEV></os:DEV>
+<!--Optional:-->
+<os:FN></os:FN>
+<!--Optional:-->
+<os:SN></os:SN>
+<!--Optional:-->
+<os:PN></os:PN>
+<!--Optional:-->
+<os:ONTID></os:ONTID>
+<!--Optional:-->
+<os:NAME></os:NAME>
+<!--Optional:-->
+<os:ALIAS>%TP_NO%</os:ALIAS>
+</os:object>
+<!--Optional:-->
+<os:Session>1</os:Session>
+<!--Optional:-->
+<os:objectParas>
+<!--Optional:-->
+<os:SHOWOPTION></os:SHOWOPTION>
+</os:objectParas>
+</os:QUERY-ONTRUNINFO>
+</soapenv:Body>
+</soapenv:Envelope>

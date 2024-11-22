@@ -1,0 +1,15 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="uri://alcatel.com/apc/9.3">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:modify>
+         <objectName>%ADSL_DNAME%:%NOKIA_PID%</objectName>
+         <templateName>SLTN-NOKIA-ONT</templateName>
+         <templateVersion>1</templateVersion>
+         <argument>
+            <name>ontSerialNumber</name>
+            <value>%ONT_SN%</value>
+         </argument>
+         <forceModify>true</forceModify>
+      </ns:modify>
+   </soapenv:Body>
+</soapenv:Envelope>
